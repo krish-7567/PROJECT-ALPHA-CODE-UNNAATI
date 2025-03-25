@@ -1,0 +1,133 @@
+/* style.css */
+body {
+    background-color: #000; /* Very dark gray/Black background for the page */
+    font-family: Arial, sans-serif; /* Fallback font */
+    color: #eee; /* Light gray text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+h1 {
+    color: #fff; /* White color for the main title */
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Segoe UI", sans-serif; /* Dashboard title font */
+    font-size: 4.0em;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #ddd; /* Light gray for section titles */
+    text-align: left; /* Align graph headings to the left within their container */
+    font-family: "Georgia", serif; /* Graph heading font */
+    font-size: 1.8em;
+    margin-top: 20px; /* Add some space above the heading */
+    margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.dash-graph {
+    border: 1px solid #444; /* Darker gray border around graphs */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #111; /* Very dark gray background for graphs */
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto 20px auto; /* Center the graph and add margin below */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* Subtle shadow */
+}
+
+.dash-dropdown {
+    margin: 20px auto;
+    width: 50%;
+    font-size: 1em;
+    background-color: #333;
+    color: #ccc;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-family: "Verdana", sans-serif; /* Graph description/insights font */
+}
+
+.dash-dropdown-option {
+    background-color: #333;
+    color: #ccc;
+    font-family: "Verdana", sans-serif; /* Graph description/insights font */
+}
+
+p {
+    color: #bbb;
+    font-family: "Roboto", sans-serif; /* Graph description and insights font */
+    font-size: 1.3em; /* Slightly increased size */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
+    text-align: left; /* Align paragraph text to the left */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #111;
+    color: #ccc;
+    font-size: 0.9em;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Style for the main title container to ensure centering */
+body > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #111;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for individual graph sections */
+body > div:not(:first-child):not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left within the section */
+    width: 80%; /* Match graph width */
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 5px;
+}
+
+/* Style for the footer to ensure centering */
+body > div:last-child {
+    width: 100%;
+    background-color: #111;
+    padding: 10px 0;
+}
+
+/* assets/style.css */
+button:hover {
+    box-shadow: 0 0 20px #007bff, 0 0 10px #007bff; /* Example for the blue button */
+}
+
+/* You would add a similar rule for the purple button with its color */
+#compare-phones-button:hover {
+    box-shadow: 0 0 20px #a78bfa, 0 0 10px #a78bfa;
+}
+/* assets/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* ... other styles ... */
+
+/* Neon effect on button hover with galaxy colors */
+#graph-analysis-button:hover,
+#compare-phones-button:hover {
+    box-shadow: 0 0 15px #6a0dad, 0 0 30px #483d8b, 0 0 45px #800080; /* Purple galaxy colors */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Specific neon effect for the "GRAPH ANALYSIS" button on hover */
+#graph-analysis-button:hover {
+    box-shadow: 0 0 15px #00FFFF, 0 0 30px #00FFFF, 0 0 45px #00FFFF; /* Cyan neon */
+}
+
+/* Specific neon effect for the "COMPARE 2 MOBILE PHONES" button on hover */
+#compare-phones-button:hover {
+    box-shadow: 0 0 15px #FF69B4, 0 0 30px #FF1493, 0 0 45px #C71585; /* Pink/Magenta neon */
+}
